@@ -1,0 +1,183 @@
+2009-01-01 00:06:14 am com.xiaomi.finddevice [Thread:144] sdk_version = 3_7_2 
+2009-01-01 00:06:15 am com.xiaomi.finddevice [Thread:144] locale.default.country = GB 
+2009-01-01 00:06:15 am com.xiaomi.finddevice  
+java.lang.IllegalStateException: Not allowed to start service Intent { pkg=com.xiaomi.xmsf cmp=com.xiaomi.xmsf/com.xiaomi.push.service.XMPushService (has extras) }: app is in background uid null
+	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1587)
+	at android.app.ContextImpl.startService(ContextImpl.java:1542)
+	at android.content.ContextWrapper.startService(ContextWrapper.java:674)
+	at com.xiaomi.mipush.sdk.PushServiceClient.startServiceSafely(PushServiceClient.java:683)
+	at com.xiaomi.mipush.sdk.PushServiceClient.<init>(PushServiceClient.java:150)
+	at com.xiaomi.mipush.sdk.PushServiceClient.getInstance(PushServiceClient.java:93)
+	at com.xiaomi.mipush.sdk.MiPushClient.initialize(MiPushClient.java:417)
+	at com.xiaomi.mipush.sdk.MiPushClient.access$100(MiPushClient.java:62)
+	at com.xiaomi.mipush.sdk.MiPushClient$1.run(MiPushClient.java:169)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+
+2009-01-01 00:06:16 am com.xiaomi.finddevice [Thread:144] Don't send message before initialization succeeded! 
+2009-01-01 00:06:16 am com.xiaomi.finddevice  
+java.lang.IllegalStateException: Not allowed to start service Intent { act=action_cr_config pkg=com.xiaomi.xmsf cmp=com.xiaomi.xmsf/com.xiaomi.push.service.XMPushService (has extras) }: app is in background uid null
+	at android.app.ContextImpl.startServiceCommon(ContextImpl.java:1587)
+	at android.app.ContextImpl.startService(ContextImpl.java:1542)
+	at android.content.ContextWrapper.startService(ContextWrapper.java:674)
+	at com.xiaomi.mipush.sdk.PushServiceClient.startServiceSafely(PushServiceClient.java:683)
+	at com.xiaomi.mipush.sdk.PushServiceClient.callService(PushServiceClient.java:702)
+	at com.xiaomi.mipush.sdk.PushServiceClient.sendDataCommon(PushServiceClient.java:632)
+	at com.xiaomi.mipush.sdk.ClientReportHelper.sendConfigInfo(ClientReportHelper.java:33)
+	at com.xiaomi.mipush.sdk.MiPushClient.initEventPerfLogic(MiPushClient.java:1260)
+	at com.xiaomi.mipush.sdk.MiPushClient.initialize(MiPushClient.java:428)
+	at com.xiaomi.mipush.sdk.MiPushClient.access$100(MiPushClient.java:62)
+	at com.xiaomi.mipush.sdk.MiPushClient$1.run(MiPushClient.java:169)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:458)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+
+2008-12-31 21:30:13 PM com.xiaomi.finddevice [Thread:127] sdk_version = 3_7_2 
+2008-12-31 21:30:13 PM com.xiaomi.finddevice [Thread:127] get region from system, region = IN 
+2008-12-31 21:30:14 PM com.xiaomi.finddevice [Thread:127] Don't send message before initialization succeeded! 
+2008-12-31 21:30:09 PM com.xiaomi.finddevice [Thread:130] sdk_version = 3_7_2 
+2008-12-31 21:30:09 PM com.xiaomi.finddevice [Thread:130] Could not send  register message within 5s repeatly . 
+2008-12-31 21:30:08 PM com.xiaomi.finddevice [Thread:132] sdk_version = 3_7_2 
+2008-12-31 21:30:08 PM com.xiaomi.finddevice [Thread:132] get region from system, region = IN 
+2008-12-31 21:30:09 PM com.xiaomi.finddevice [Thread:132] Don't send message before initialization succeeded! 
+2021-01-26 21:24:09 PM com.xiaomi.finddevice [Thread:162] Don't send message before initialization succeeded! 
+2021-01-26 21:24:21 PM com.xiaomi.finddevice [Thread:176] receive an intent from server, action=com.xiaomi.mipush.ERROR 
+2021-01-26 21:24:21 PM com.xiaomi.finddevice receive a error message. code = 70000001, msg=  the push is not connected. 
+2021-01-26 21:24:21 PM com.xiaomi.finddevice [Thread:176] begin execute onCommandResult, command=Registration, resultCode=70000001, reason= the push is not connected. 
+2021-01-27 17:15:52 PM com.xiaomi.finddevice [Thread:139] sdk_version = 3_7_2 
+2021-01-27 17:15:52 PM com.xiaomi.finddevice [Thread:139] get region from system, region = IN 
+2021-01-27 17:15:52 PM com.xiaomi.finddevice [Thread:139] Don't send message before initialization succeeded! 
+2021-01-27 17:15:53 PM com.xiaomi.finddevice [Thread:139] Don't send message before initialization succeeded! 
+2021-01-27 17:16:19 PM com.xiaomi.finddevice [Thread:163] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-01-27 17:16:19 PM com.xiaomi.finddevice [Thread:163] processing a message, action=Registration 
+2021-01-27 17:16:19 PM com.xiaomi.finddevice [Thread:163] begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-01-27 17:16:19 PM com.xiaomi.finddevice [Thread:163] ASSEMBLE_PUSH : assemble push register 
+2021-01-27 17:16:26 PM com.xiaomi.finddevice [Thread:163] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-01-27 17:16:26 PM com.xiaomi.finddevice [Thread:163] processing a message, action=Notification 
+2021-01-27 17:16:26 PM com.xiaomi.finddevice [Thread:163] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-01-27 17:16:26 PM com.xiaomi.finddevice [Thread:163] processing a message, action=Command 
+2021-01-27 17:16:26 PM com.xiaomi.finddevice [Thread:163] begin execute onCommandResult, command=set-account, resultCode=0, reason=成功 
+2021-01-29 18:42:09 PM com.xiaomi.finddevice [Thread:135] sdk_version = 3_7_2 
+2021-01-29 18:42:09 PM com.xiaomi.finddevice [Thread:141] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-01-29 18:42:09 PM com.xiaomi.finddevice [Thread:145] get region from system, region = IN 
+2021-01-29 18:42:09 PM com.xiaomi.finddevice [Thread:141] ASSEMBLE_PUSH : assemble push register 
+2021-01-29 18:42:09 PM com.xiaomi.finddevice [Thread:141] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-01-29 18:42:09 PM com.xiaomi.finddevice receiving an empty message, drop 
+2021-01-29 21:23:19 PM com.xiaomi.finddevice [Thread:141] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-01-29 21:23:19 PM com.xiaomi.finddevice [Thread:141] processing a message, action=Command 
+2021-01-29 21:23:19 PM com.xiaomi.finddevice [Thread:141] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-01-31 07:59:27 AM com.xiaomi.finddevice [Thread:147] sdk_version = 3_7_2 
+2021-01-31 07:59:27 AM com.xiaomi.finddevice [Thread:156] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-01-31 07:59:27 AM com.xiaomi.finddevice [Thread:156] ASSEMBLE_PUSH : assemble push register 
+2021-01-31 07:59:27 AM com.xiaomi.finddevice [Thread:156] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-01-31 07:59:27 AM com.xiaomi.finddevice receiving an empty message, drop 
+2021-01-31 07:59:49 AM com.xiaomi.finddevice [Thread:156] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-01-31 07:59:49 AM com.xiaomi.finddevice [Thread:156] processing a message, action=Command 
+2021-01-31 07:59:49 AM com.xiaomi.finddevice [Thread:156] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-01-31 08:05:37 AM com.xiaomi.finddevice [Thread:151] sdk_version = 3_7_2 
+2021-01-31 08:05:37 AM com.xiaomi.finddevice [Thread:158] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-01-31 08:05:37 AM com.xiaomi.finddevice [Thread:158] ASSEMBLE_PUSH : assemble push register 
+2021-01-31 08:05:37 AM com.xiaomi.finddevice [Thread:158] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-01-31 08:05:37 AM com.xiaomi.finddevice receiving an empty message, drop 
+2021-01-31 08:05:37 AM com.xiaomi.finddevice [Thread:158] (Local) begin execute onCommandResult, command=set-account, resultCode=0, reason=null 
+2021-01-31 08:05:37 AM com.xiaomi.finddevice [Thread:158] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-01-31 08:05:37 AM com.xiaomi.finddevice receiving an empty message, drop 
+2021-02-16 11:48:07 AM com.xiaomi.finddevice [Thread:135] sdk_version = 3_7_2 
+2021-02-16 11:48:07 AM com.xiaomi.finddevice [Thread:145] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-02-16 11:48:08 AM com.xiaomi.finddevice [Thread:145] ASSEMBLE_PUSH : assemble push register 
+2021-02-16 11:48:08 AM com.xiaomi.finddevice [Thread:145] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-02-16 11:48:08 AM com.xiaomi.finddevice receiving an empty message, drop 
+2021-02-16 11:48:08 AM com.xiaomi.finddevice [Thread:135] do sync info 
+2021-02-16 11:48:08 AM com.xiaomi.finddevice [Thread:135] get region from system, region = IN 
+2021-02-16 11:48:08 AM com.xiaomi.finddevice [Thread:135] create id manager is: com.xiaomi.channel.commonutils.msa.OtherIdManager@3e0851a 
+2021-02-16 11:50:55 AM com.xiaomi.finddevice [Thread:145] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-02-16 11:50:55 AM com.xiaomi.finddevice [Thread:145] processing a message, action=Command 
+2021-02-16 11:50:55 AM com.xiaomi.finddevice [Thread:145] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-02-17 19:29:04 PM com.xiaomi.finddevice [Thread:136] sdk_version = 3_7_2 
+2021-02-17 19:29:04 PM com.xiaomi.finddevice [Thread:147] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-02-17 19:29:05 PM com.xiaomi.finddevice [Thread:147] ASSEMBLE_PUSH : assemble push register 
+2021-02-17 19:29:05 PM com.xiaomi.finddevice [Thread:147] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-02-17 19:29:05 PM com.xiaomi.finddevice receiving an empty message, drop 
+2021-02-17 19:29:24 PM com.xiaomi.finddevice [Thread:147] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-02-17 19:29:24 PM com.xiaomi.finddevice [Thread:147] processing a message, action=Command 
+2021-02-17 19:29:24 PM com.xiaomi.finddevice [Thread:147] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-04-22 23:16:20 PM com.xiaomi.finddevice [Thread:149] sdk_version = 3_7_2 
+2021-04-22 23:16:20 PM com.xiaomi.finddevice [Thread:159] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-04-22 23:16:20 PM com.xiaomi.finddevice [Thread:159] ASSEMBLE_PUSH : assemble push register 
+2021-04-22 23:16:20 PM com.xiaomi.finddevice [Thread:159] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-04-22 23:16:20 PM com.xiaomi.finddevice receiving an empty message, drop 
+2021-04-22 23:16:21 PM com.xiaomi.finddevice [Thread:149] do sync info 
+2021-04-22 23:16:21 PM com.xiaomi.finddevice [Thread:149] get region from system, region = IN 
+2021-04-22 23:16:21 PM com.xiaomi.finddevice [Thread:149] create id manager is: com.xiaomi.channel.commonutils.msa.OtherIdManager@578a197 
+2021-04-27 12:24:07 PM com.xiaomi.finddevice [Thread:152] sdk_version = 3_7_2 
+2021-04-27 12:24:07 PM com.xiaomi.finddevice [Thread:160] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-04-27 12:24:07 PM com.xiaomi.finddevice [Thread:160] ASSEMBLE_PUSH : assemble push register 
+2021-04-27 12:24:08 PM com.xiaomi.finddevice [Thread:160] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-04-27 12:24:08 PM com.xiaomi.finddevice receiving an empty message, drop 
+2021-04-27 14:00:27 PM com.xiaomi.finddevice [Thread:160] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-04-27 14:00:27 PM com.xiaomi.finddevice [Thread:160] processing a message, action=Command 
+2021-04-27 14:00:27 PM com.xiaomi.finddevice [Thread:160] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-05-02 08:58:56 AM com.xiaomi.finddevice [Thread:155] sdk_version = 3_7_2 
+2021-05-02 08:58:56 AM com.xiaomi.finddevice [Thread:165] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-05-02 08:58:57 AM com.xiaomi.finddevice [Thread:165] ASSEMBLE_PUSH : assemble push register 
+2021-05-02 08:58:57 AM com.xiaomi.finddevice [Thread:165] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-05-02 08:58:57 AM com.xiaomi.finddevice receiving an empty message, drop 
+2021-05-02 08:59:57 AM com.xiaomi.finddevice [Thread:165] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-05-02 08:59:57 AM com.xiaomi.finddevice [Thread:165] processing a message, action=Command 
+2021-05-02 08:59:57 AM com.xiaomi.finddevice [Thread:165] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-05-08 15:36:20 PM com.xiaomi.finddevice [Thread:148] sdk_version = 3_7_2 
+2021-05-08 15:36:21 PM com.xiaomi.finddevice [Thread:160] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-05-08 15:36:21 PM com.xiaomi.finddevice [Thread:160] ASSEMBLE_PUSH : assemble push register 
+2021-05-08 15:36:21 PM com.xiaomi.finddevice [Thread:160] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-05-08 15:36:21 PM com.xiaomi.finddevice receiving an empty message, drop 
+2021-05-08 15:36:21 PM com.xiaomi.finddevice [Thread:148] do sync info 
+2021-05-08 15:36:21 PM com.xiaomi.finddevice [Thread:148] get region from system, region = IN 
+2021-05-08 15:36:21 PM com.xiaomi.finddevice [Thread:148] create id manager is: com.xiaomi.channel.commonutils.msa.OtherIdManager@e0ab67a 
+2021-05-08 15:36:51 PM com.xiaomi.finddevice [Thread:160] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-05-08 15:36:51 PM com.xiaomi.finddevice [Thread:160] processing a message, action=Command 
+2021-05-08 15:36:51 PM com.xiaomi.finddevice [Thread:160] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-05-28 15:57:47 PM com.xiaomi.finddevice [Thread:143] sdk_version = 3_7_2 
+2021-05-28 15:57:47 PM com.xiaomi.finddevice [Thread:149] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-05-28 15:57:48 PM com.xiaomi.finddevice [Thread:149] ASSEMBLE_PUSH : assemble push register 
+2021-05-28 15:57:48 PM com.xiaomi.finddevice [Thread:143] do sync info 
+2021-05-28 15:57:48 PM com.xiaomi.finddevice [Thread:143] get region from system, region = IN 
+2021-05-28 15:57:48 PM com.xiaomi.finddevice [Thread:149] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-05-28 15:57:48 PM com.xiaomi.finddevice receiving an empty message, drop 
+2021-05-28 15:57:48 PM com.xiaomi.finddevice [Thread:143] create id manager is: com.xiaomi.channel.commonutils.msa.OtherIdManager@e899929 
+2021-05-28 16:00:13 PM com.xiaomi.finddevice [Thread:149] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-05-28 16:00:13 PM com.xiaomi.finddevice [Thread:149] processing a message, action=Command 
+2021-05-28 16:00:13 PM com.xiaomi.finddevice [Thread:149] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-07-21 12:39:08 PM com.xiaomi.finddevice [Thread:151] sdk_version = 3_7_2 
+2021-07-21 12:39:09 PM com.xiaomi.finddevice [Thread:160] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-07-21 12:39:09 PM com.xiaomi.finddevice [Thread:160] ASSEMBLE_PUSH : assemble push register 
+2021-07-21 12:39:09 PM com.xiaomi.finddevice [Thread:160] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-07-21 12:39:09 PM com.xiaomi.finddevice receiving an empty message, drop 
+2021-07-21 12:39:09 PM com.xiaomi.finddevice [Thread:151] do sync info 
+2021-07-21 12:39:09 PM com.xiaomi.finddevice [Thread:151] get region from system, region = IN 
+2021-07-21 12:39:09 PM com.xiaomi.finddevice [Thread:151] create id manager is: com.xiaomi.channel.commonutils.msa.OtherIdManager@c2ad8b4 
+2021-07-21 12:39:36 PM com.xiaomi.finddevice [Thread:160] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-07-21 12:39:36 PM com.xiaomi.finddevice [Thread:160] processing a message, action=Command 
+2021-07-21 12:39:36 PM com.xiaomi.finddevice [Thread:160] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-07-22 15:38:13 PM com.xiaomi.finddevice [Thread:164] sdk_version = 3_7_2 
+2021-07-22 15:38:14 PM com.xiaomi.finddevice [Thread:175] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-07-22 15:38:14 PM com.xiaomi.finddevice [Thread:175] ASSEMBLE_PUSH : assemble push register 
+2021-07-22 15:38:14 PM com.xiaomi.finddevice [Thread:175] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-07-22 15:38:14 PM com.xiaomi.finddevice receiving an empty message, drop 
+2021-07-22 18:52:32 PM com.xiaomi.finddevice [Thread:175] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-07-22 18:52:32 PM com.xiaomi.finddevice [Thread:175] processing a message, action=Command 
+2021-07-22 18:52:32 PM com.xiaomi.finddevice [Thread:175] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
+2021-07-23 19:38:42 PM com.xiaomi.finddevice [Thread:156] sdk_version = 3_7_2 
+2021-07-23 19:38:43 PM com.xiaomi.finddevice [Thread:166] (Local) begin execute onCommandResult, command=register, resultCode=0, reason=null 
+2021-07-23 19:38:43 PM com.xiaomi.finddevice [Thread:166] ASSEMBLE_PUSH : assemble push register 
+2021-07-23 19:38:43 PM com.xiaomi.finddevice [Thread:166] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-07-23 19:38:43 PM com.xiaomi.finddevice receiving an empty message, drop 
+2021-07-23 19:39:12 PM com.xiaomi.finddevice [Thread:166] receive an intent from server, action=com.xiaomi.mipush.RECEIVE_MESSAGE 
+2021-07-23 19:39:12 PM com.xiaomi.finddevice [Thread:166] processing a message, action=Command 
+2021-07-23 19:39:12 PM com.xiaomi.finddevice [Thread:166] begin execute onCommandResult, command=set-account, resultCode=0, reason=duplicated user account 
