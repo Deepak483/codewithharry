@@ -1,0 +1,5 @@
+{
+    "editor.minimap.showSlider": "always",
+    "editor.mouseWheelZoom": true,
+    "code-runner.clearPreviousOutput": true
+}
